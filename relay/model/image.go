@@ -4,7 +4,7 @@ type ImageRequest struct {
 	Model          string `json:"model"`
 	Prompt         string `json:"prompt" binding:"required"`
         NegativePrompt string `json:"negative_prompt,omitempty"`
-	ImageUrl       string `json:"image_url,omitempty"`
+	ImageUrl       string `json:"ref_image,omitempty"`
 	N              int    `json:"n,omitempty"`
 	Size           string `json:"size,omitempty"`
 	Quality        string `json:"quality,omitempty"`
